@@ -1,0 +1,35 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+Inserite nella vostra repo un semplice file di testo in cui elencate le colonne della vostra tabella complete di tipo di dato, attributi 
+ed eventuale indice!
+
+
+id =                        bgint              unique, not null, auto increment          primary key
+
+modello =                   varchar(20)        not null                                  index
+
+marchio =                   varchar(20)        not null                                  index
+
+immatricolazione =          date               not null                                  index
+
+km =                        mediumint          not null                                  index
+
+prezzo =                    mediumint          not null                                  index
+
+disponibilità immediata =   tinyint(1)         default: 0 
+
+alimentazione =             char(7)            not null
+
+colore =                    varchar(10)        not null
+
+cambio =                    char(1)            not null
+
+segmento =                  char(1)            null
+
+trazione =                  char(1)            null
+
+porte =                     char(1)            null
+
+posti =                     char(1)            null
+
+
+
