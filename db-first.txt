@@ -11,9 +11,9 @@ marchio =                   varchar(20)        not null                         
 
 immatricolazione =          date               not null                                  index
 
-km =                        mediumint          not null                                  index
+km =                        mediumint          not null, unsigned                        index
 
-prezzo =                    mediumint          not null                                  index
+prezzo =                    mediumint          not null, unsigned                        index
 
 disponibilità immediata =   tinyint(1)         default: 0 
 
